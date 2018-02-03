@@ -17,9 +17,14 @@
     <link rel="stylesheet" type="text/css" href="css/jquery.circliful.css">
     <link rel="stylesheet" type="text/css" href="vendors/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="vendors/owl-carousel/owl.theme.css">
-    <link rel="stylesheet" type="text/css" href="css/css-chinhsua/search.css">
+    
     <link rel="stylesheet" type="text/css" href="css/fa-svg-with-js.css">
     <script type="text/javascript" src="js/fontawesome-all.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- <script src="/js/.js" type="text/javascript" charset="utf-8" async defer></script> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/css-chinhsua/search.css">
     <!--end of page level css-->
 </head>
 
@@ -28,7 +33,7 @@
     <header>
         <!-- Icon Section Start -->
         <div class="icon-section">
-            <div class="container">
+            <div class="container-fluid">
                 <ul class="list-inline">
                     <li>
                         <a href="#"> <i class="livicon" data-name="facebook" data-size="18" data-loop="true" data-c="#fff" data-hc="#757b87"></i>
@@ -67,7 +72,7 @@
         </div>
         <!-- //Icon Section End -->
         <!-- Nav bar Start -->
-        <nav class="navbar navbar-default container">
+        <nav class="navbar navbar-default container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
                     <span><a href="#"> <i class="livicon" data-name="responsive-menu" data-size="25" data-loop="true" data-c="#757b87" data-hc="#ccc"></i>
@@ -79,47 +84,43 @@
             <div class="collapse navbar-collapse" id="collapse">
                 <ul class="nav navbar-nav navbar-left">
                     <!-- ==============================END TINH/TP ============================-->
-                    <li class="dropdown" id="thanhpho"><a href="#" class="dropdown-toggle button" data-toggle="dropdown"> TP.Cần Thơ <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="">Cần Thơ <span class="badge">42</span></a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="">fff</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="">dfsf</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="">About Us </a></li>
-                            
-                        </ul>
+                    <li id="thanhpho">
+                        <a title="">
+                            <select class="js-example-basic-single" name="state" style="width: 180px;" class="col-md-5">
+                                <option value="AL">Cần Thơ</option>
+                                <option value="WY">Wyoming</option>
+                                <option value="WY">lam</option>
+                                <option value="WY">tran</option>
+                                <option value="WY">Duc</option>
+                            </select>
+                        </a>
                     </li>
                     <!-- ==============================END TINH/TP ======================================-->
 
                     <!-- ===========================DANH MUC ====================================================-->
-                    <li class="dropdown" id="danhmuc"><a href="#" class="dropdown-toggle button" data-toggle="dropdown">Ăn uống <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="">Cần Thơ <span class="badge">42</span></a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="">fff</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="">dfsf</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="">About Us </a></li>
-                            
-                        </ul>
+                    <li class="dropdown" id="danhmuc">
+                        <a title="">
+                            <select class="js-example-basic-single" name="state" style="width: 180px;" class="col-md-5">
+                                <option value="AL">Cần Thơ</option>
+                                <option value="WY">Wyoming</option>
+                                <option value="WY">lam</option>
+                                <option value="WY">tran</option>
+                                <option value="WY">Duc</option>
+                            </select>
+                        </a>
                     </li>
                     <!-- ===========================END DANH MUC =========================================-->
 
                     <!-- =========================== TIM KIEM =========================================-->
-                    <li>
+                    <li id="search-form">
                         <form class="navbar-form navbar-left" id="form-search">
-                            <div class="col-md-10 col-xs-8 col-sm-12" >
-                                <div class="input-group col-md-8 col-xs-12 col-sm-12" id="form-search-text-button">
-                                  <input type="text" class="form-control" placeholder="Search for...">
-                                  <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button">Bộ lọc</button>
-                                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
-                                  </span>
-                                </div><!-- /input-group -->
-                              </div><!-- /.col-lg-6 -->
+                            <div class="input-group col-md-8 col-xs-12 col-sm-12" id="form-search-text-button">
+                              <input type="text" class="form-control" placeholder="Search for...">
+                              <span class="input-group-btn">
+                                <!-- <button class="btn btn-default" type="button">Bộ lọc</button> -->
+                                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                              </span>
+                            </div><!-- /input-group -->
                           </form>
                     </li>   
                     <!-- =========================== END TIM KIEM =========================================-->
@@ -127,17 +128,23 @@
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="" title="">LamTheMen  <i class="fas fa-user-circle fa-lg   "></i></a></li>
-                    <li class="dropdown" id="thanhpho"><a href="#" class="dropdown-toggle button" data-toggle="dropdown"><i class="fas fa-bars"></i></a>
+                    <li><a href="" title="">LamTheMen  <i class="fas fa-user-circle fa-lg"></i></a></li>
+                    <li class="dropdown" class="notify">
+                        <a href="#" class="dropdown-toggle button" data-toggle="dropdown"><i class="far fa-bell fa-lg"></i></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="">Thêm địa điểm</a></li>
-                            <li role="separator" class="divider"></li>
                             <li><a href="">Viết bài dánh giá</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="">Góp ý</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="">About Us </a></li>
-                            
+                            <li><a href="">Góp ý</a></li>  
+                            <li><a href="">About Us </a></li>  
+                        </ul>
+                    </li>
+                    <li class="dropdown" class="notify">
+                        <a href="#" class="dropdown-toggle button" data-toggle="dropdown"><i class="fas fa-bars fa-lg"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="">Thêm địa điểm</a></li>
+                            <li><a href="">Viết bài dánh giá</a></li>
+                            <li><a href="">Góp ý</a></li>  
+                            <li><a href="">About Us </a></li>  
                         </ul>
                     </li>
                 </ul>
@@ -151,9 +158,9 @@
     <div id="owl-demo" class="owl-carousel owl-theme">
         <div class="item"><img src="images/slide_1.jpg" alt="slider-image">
         </div>
-        <div class="item"><img src="images/slide_2.jpg" alt="slider-image">
+        <div class="item"><img src="images/slide_1.jpg" alt="slider-image">
         </div>
-        <div class="item"><img src="images/slide_3.jpg" alt="slider-image">
+        <div class="item"><img src="images/slide_1.jpg" alt="slider-image">
         </div>
     </div>
     <!-- //Carousel End -->
@@ -173,117 +180,117 @@
                 <!-- Box Start -->
                 <div class="box">
                     <!-- Tab panels Section Start -->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="bs-example">
-                    <ul class="nav nav-tabs">
-                        <li class="active">
-                            <a href="#home" data-toggle="tab">Bài viết mới</a>
-                        </li>
-                        <li>
-                            <a href="#profile" data-toggle="tab">Xem nhiều nhất</a>
-                        </li>
-                    </ul>
-                    <div id="myTabContent" class="tab-content">
-                        <div class="tab-pane fade active in" id="home">
-                            <hr>
-                            <div class=" row">
-                                <a href="" title="">
-                                    <div class="col-md-8">
-                                        <h3>Bến Ninh Kiều</h3>
-                                        <p>
-                                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img src="images/baiviet/ninhkieu.png" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                            <hr>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="bs-example">
+                                <ul class="nav nav-tabs">
+                                    <li class="active">
+                                        <a href="#home" data-toggle="tab">Bài viết mới</a>
+                                    </li>
+                                    <li>
+                                        <a href="#profile" data-toggle="tab">Xem nhiều nhất</a>
+                                    </li>
+                                </ul>
+                                <div id="myTabContent" class="tab-content">
+                                    <div class="tab-pane fade active in" id="home">
+                                        <hr>
+                                        <div class=" row">
+                                            <a href="" title="">
+                                                <div class="col-md-8">
+                                                    <h3>Bến Ninh Kiều</h3>
+                                                    <p>
+                                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <img src="images/baiviet/ninhkieu.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <hr>
 
-                            <div class=" row">
-                                <a href="" title="">
-                                    <div class="col-md-8">
-                                        <h3>Bến Ninh Kiều</h3>
-                                        <p>
-                                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img src="images/baiviet/dem-tren-ben-ninh-kieu.png" alt="">
-                                    </div>
-                                </a>
-                                
-                            </div>
-                            <hr>
+                                        <div class=" row">
+                                            <a href="" title="">
+                                                <div class="col-md-8">
+                                                    <h3>Bến Ninh Kiều</h3>
+                                                    <p>
+                                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <img src="images/baiviet/ninhkieu.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <hr>
 
-                            <div class=" row">
-                                <a href="" title="">
-                                    <div class="col-md-8">
-                                        <h3>Bến Ninh Kiều</h3>
-                                        <p>
-                                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-                                        </p>
+                                        <div class=" row">
+                                            <a href="" title="">
+                                                <div class="col-md-8">
+                                                    <h3>Bến Ninh Kiều</h3>
+                                                    <p>
+                                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <img src="images/baiviet/23.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="col-md-3">
-                                        <img src="images/baiviet/23.png" alt="">
+                                    <div class="tab-pane fade" id="profile">
+                                        <hr>
+                                        <div class="row">
+                                            <a href="" title="">
+                                                <div class="col-md-8">
+                                                    <h3>Bến Ninh Kiều</h3>
+                                                    <p>
+                                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <img src="images/baiviet/ninhkieu.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <hr>
+                                        <div class=" row">
+                                            <a href="" title="">
+                                                <div class="col-md-8">
+                                                    <h3>Bến Ninh Kiều</h3>
+                                                    <p>
+                                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <img src="images/baiviet/ninhkieu.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <hr>
+                                        <div class=" row">
+                                            <a href="" title="">
+                                                <div class="col-md-8">
+                                                    <h3>Bến Ninh Kiều</h3>
+                                                    <p>
+                                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <img src="images/baiviet/ninhkieu.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                </a>
+                                    
+                                </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="profile">
-                            <hr>
-                            <div class=" row">
-                                <a href="" title="">
-                                    <div class="col-md-8">
-                                        <h3>Bến Ninh Kiều</h3>
-                                        <p>
-                                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img src="images/baiviet/ninhkieu.png" alt="">
-                                    </div>
-                                </a>
-                            </div>
-
-                            <hr>
-                            <div class=" row">
-                                <a href="" title="">
-                                    <div class="col-md-8">
-                                        <h3>Bến Ninh Kiều</h3>
-                                        <p>
-                                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img src="images/baiviet/ninhkieu.png" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                            <hr>
-                            <div class=" row">
-                                <a href="" title="">
-                                    <div class="col-md-8">
-                                        <h3>Bến Ninh Kiều</h3>
-                                        <p>
-                                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img src="images/baiviet/ninhkieu.png" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        
                     </div>
+                    <!-- //Tab panels Section End -->
                 </div>
-            </div>
-        </div>
-        <!-- //Tab panels Section End -->
-                </div>
+                <!-- Box End -->
             </div>
             <!-- //Easy to Use Section End -->
             
@@ -299,85 +306,147 @@
             <div class="col-md-3 col-sm-5 profile">
                 <a href="" title="">
                     <div class="thumbnail bg-white">
-                        <img src="images/img_3.jpg" alt="team-image" class="img-responsive">
+                        <img src="images/baiviet/ninhkieu.png" alt="team-image" class="img-responsive">
                         <div class="caption">
-                            <b>John Doe</b>
+                            <b>Cầu đi bộ Cần Thơ</b>
                             <br /> Founder & Partner
                             <br />
                             <div class="divide">
-                                <a href="#" class="divider"> <i class="livicon" data-name="facebook" data-size="22" data-loop="true" data-c="#3a5795" data-hc="#3a5795"></i>
-                                </a>
-                                <a href="#"> <i class="livicon" data-name="twitter" data-size="22" data-loop="true" data-c="#55acee" data-hc="#55acee"></i>
-                                </a>
-                                <a href="#"> <i class="livicon" data-name="google-plus" data-size="22" data-loop="true" data-c="#d73d32" data-hc="#d73d32"></i>
-                                </a>
-                                <a href="#"> <i class="livicon" data-name="linkedin" data-size="22" data-loop="true" data-c="#1b86bd" data-hc="#1b86bd"></i>
-                                </a>
+                                <label for="">100.000 <i class="fas fa-eye"></i></label>
+                                <a title="">100 <i class="far fa-comment"></i></a>
+                                <a title="" id="point-palce">8.0 <i class="fas fa-star"></i></i></a>
+
                             </div>
                         </div>
                     </div>
-                </a>
-                
+                </a>     
             </div>
             <div class="col-md-3 col-sm-5 profile">
-                <div class="thumbnail bg-white">
-                    <img src="images/img_5.jpg" alt="team-image">
-                    <div class="caption">
-                        <b>John Doe</b>
-                        <br /> Founder & Partner
-                        <br />
-                        <div class="divide">
-                            <a href="#" class="divider"> <i class="livicon" data-name="facebook" data-size="22" data-loop="true" data-c="#3a5795" data-hc="#3a5795"></i>
-                            </a>
-                            <a href="#"> <i class="livicon" data-name="twitter" data-size="22" data-loop="true" data-c="#55acee" data-hc="#55acee"></i>
-                            </a>
-                            <a href="#"> <i class="livicon" data-name="google-plus" data-size="22" data-loop="true" data-c="#d73d32" data-hc="#d73d32"></i>
-                            </a>
-                            <a href="#"> <i class="livicon" data-name="linkedin" data-size="22" data-loop="true" data-c="#1b86bd" data-hc="#1b86bd"></i>
-                            </a>
+                <a href="" title="">
+                    <div class="thumbnail bg-white">
+                        <img src="images/baiviet/dem-tren-ben-ninh-kieu.png" alt="team-image" class="img-responsive">
+                        <div class="caption">
+                            <b>Bến Ninh Kiều</b>
+                            <br /> Founder & Partner
+                            <br />
+                            <div class="divide">
+                                <label for="">200.000 <i class="fas fa-eye"></i></label>
+                                <a title="">100 <i class="far fa-comment"></i></a>
+                                <a title="" id="point-palce">8.0 <i class="fas fa-star"></i></i></a>
+
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>     
             </div>
             <div class="col-md-3 col-sm-5 profile">
-                <div class="thumbnail bg-white">
-                    <img src="images/img_4.jpg" alt="team-image" class="img-responsive">
-                    <div class="caption">
-                        <b>John Doe</b>
-                        <br /> Founder & Partner
-                        <br />
-                        <div class="divide">
-                            <a href="#" class="divider"> <i class="livicon" data-name="facebook" data-size="22" data-loop="true" data-c="#3a5795" data-hc="#3a5795"></i>
-                            </a>
-                            <a href="#"> <i class="livicon" data-name="twitter" data-size="22" data-loop="true" data-c="#55acee" data-hc="#55acee"></i>
-                            </a>
-                            <a href="#"> <i class="livicon" data-name="google-plus" data-size="22" data-loop="true" data-c="#d73d32" data-hc="#d73d32"></i>
-                            </a>
-                            <a href="#"> <i class="livicon" data-name="linkedin" data-size="22" data-loop="true" data-c="#1b86bd" data-hc="#1b86bd"></i>
-                            </a>
+                <a href="" title="">
+                    <div class="thumbnail bg-white">
+                        <img src="images/baiviet/23.png" alt="team-image" class="img-responsive">
+                        <div class="caption">
+                            <b>Phố Cổ Hội An</b>
+                            <br /> Founder & Partner
+                            <br />
+                            <div class="divide">
+                                <label for="">100.000 <i class="fas fa-eye"></i></label>
+                                <a title="">100 <i class="far fa-comment"></i></a>
+                                <a title="" id="point-palce">8.0 <i class="fas fa-star"></i></i></a>
+
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>   
             </div>
             <div class="col-md-3 col-sm-5 profile">
-                <div class="thumbnail bg-white">
-                    <img src="images/img_6.jpg" alt="team-image">
-                    <div class="caption">
-                        <b>John Doe</b>
-                        <br /> Founder & Partner
-                        <br />
-                        <div class="divide">
-                            <a href="#" class="divider"> <i class="livicon" data-name="facebook" data-size="22" data-loop="true" data-c="#3a5795" data-hc="#3a5795"></i>
-                            </a>
-                            <a href="#"> <i class="livicon" data-name="twitter" data-size="22" data-loop="true" data-c="#55acee" data-hc="#55acee"></i>
-                            </a>
-                            <a href="#"> <i class="livicon" data-name="google-plus" data-size="22" data-loop="true" data-c="#d73d32" data-hc="#d73d32"></i>
-                            </a>
-                            <a href="#"> <i class="livicon" data-name="linkedin" data-size="22" data-loop="true" data-c="#1b86bd" data-hc="#1b86bd"></i>
-                            </a>
+                <a href="" title="">
+                    <div class="thumbnail bg-white">
+                        <img src="images/baiviet/ninhkieu.png" alt="team-image" class="img-responsive">
+                        <div class="caption">
+                            <b>Phố đi bộ Nguyễn Huệ</b>
+                            <br /> Founder & Partner
+                            <br />
+                            <div class="divide">
+                                <label for="">100.000 <i class="fas fa-eye"></i></label>
+                                <a title="">100 <i class="far fa-comment"></i></a>
+                                <a title="" id="point-palce">8.0 <i class="fas fa-star"></i></i></a>
+
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>  
+            </div>
+
+            <div class="col-md-3 col-sm-5 profile">
+                <a href="" title="">
+                    <div class="thumbnail bg-white">
+                        <img src="images/baiviet/ninhkieu.png" alt="team-image" class="img-responsive">
+                        <div class="caption">
+                            <b>Cầu đi bộ Cần Thơ</b>
+                            <br /> Founder & Partner
+                            <br />
+                            <div class="divide">
+                                <label for="">100.000 <i class="fas fa-eye"></i></label>
+                                <a title="">100 <i class="far fa-comment"></i></a>
+                                <a title="" id="point-palce">8.0 <i class="fas fa-star"></i></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </a>     
+            </div>
+            <div class="col-md-3 col-sm-5 profile">
+                <a href="" title="">
+                    <div class="thumbnail bg-white">
+                        <img src="images/baiviet/dem-tren-ben-ninh-kieu.png" alt="team-image" class="img-responsive">
+                        <div class="caption">
+                            <b>Bến Ninh Kiều</b>
+                            <br /> Founder & Partner
+                            <br />
+                            <div class="divide">
+                                <label for="">200.000 <i class="fas fa-eye"></i></label>
+                                <a title="">100 <i class="far fa-comment"></i></a>
+                                <a title="" id="point-palce">8.0 <i class="fas fa-star"></i></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </a>     
+            </div>
+            <div class="col-md-3 col-sm-5 profile">
+                <a href="" title="">
+                    <div class="thumbnail bg-white">
+                        <img src="images/baiviet/23.png" alt="team-image" class="img-responsive">
+                        <div class="caption">
+                            <b>Phố Cổ Hội An</b>
+                            <br /> Founder & Partner
+                            <br />
+                            <div class="divide">
+                                <label for="">100.000 <i class="fas fa-eye"></i></label>
+                                <a title="">100 <i class="far fa-comment"></i></a>
+                                <a title="" id="point-palce">8.0 <i class="fas fa-star"></i></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </a>   
+            </div>
+            <div class="col-md-3 col-sm-5 profile">
+                <a href="" title="">
+                    <div class="thumbnail bg-white">
+                        <img src="images/baiviet/ninhkieu.png" alt="team-image" class="img-responsive">
+                        <div class="caption">
+                            <b>Phố đi bộ Nguyễn Huệ</b>
+                            <br /> Founder & Partner
+                            <br />
+                            <div class="divide">
+                                <label for="">100.000 <i class="fas fa-eye"></i></label>
+                                <a title="">100 <i class="far fa-comment"></i></a>
+                                <a title="" id="point-palce">8.0 <i class="fas fa-star"></i></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </a>  
             </div>
         </div>
         <!-- //Our Team End -->
@@ -701,8 +770,17 @@
     <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Return to top" data-toggle="tooltip" data-placement="left">
         <i class="livicon" data-name="plane-up" data-size="18" data-loop="true" data-c="#fff" data-hc="white"></i>
     </a>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.js-example-basic-single').select2({
+            });
+        });
+    </script>
+
     <!--global js starts-->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script src="js/style-switcher.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/raphael.js"></script>
