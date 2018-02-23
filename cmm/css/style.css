@@ -1,0 +1,30 @@
+body{
+	background-color: #eee;
+}
+#menuTop{
+	/*height: 75px;
+    width: 800px;
+    margin: auto;*/
+    background-color: #00000057;
+}
+
+#menuTop a{
+	color: white;
+	font-weight: 300;
+}
+.chuaMenu{
+	background-color: #eee;
+}
+
+#carousel-example-generic{
+	height: 660px;
+	overflow: hidden;
+}
+
+#carousel-example-generic .carousel-item{
+	/*transition: 2.4s;*/
+}
+
+#carousel-example-generic:hover .carousel-item{
+	transform: scale(1.5);
+}

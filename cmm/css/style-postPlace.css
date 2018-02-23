@@ -1,0 +1,115 @@
+.danhmuc{
+
+}
+
+.danhmuc ul{
+	list-style: none;
+}
+
+.danhmuc ul li{
+	padding: 2px;
+    margin-left: -41px;
+	border-bottom: 1px solid #eee;
+}
+.danhmuc ul li:hover{
+	background-color: #eee;
+}
+.danhmuc ul li a{
+	text-decoration: none;
+	color: black;
+	padding-left: 10px;
+}
+
+.danhmuc ul li a:hover{
+	text-decoration: none;
+	color: red;
+}
+
+.tuychon{
+	background-color: white;
+	margin-bottom: 10px;
+	min-height: 35px; 
+}
+.tuychon ul{
+	list-style: none;
+	margin-left: -45px;
+}
+
+.tuychon ul li{
+	float: left;
+	padding:4px;
+}
+
+.tuychon ul a{
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+	text-align: center;
+}
+.tuychon ul a:hover{
+	background-color: #eee;
+	color: white;
+}
+
+.tuychon2{
+	float: right;
+	margin-top: -10px;
+}
+.tuychon2 select{
+	padding: 0px;
+	margin-top: -3px;
+	border: 1px solid black;
+}
+
+/*======================*/
+.item-post{
+	padding: 5px;
+	border-radius: 0px;
+	margin-bottom: 10px;
+	height: 313px;
+}
+.item-post h6{
+	width: 171px;
+	height: 22px;
+	overflow: hidden;
+}
+.item-post img {
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 0px;
+	transition: 2s;
+}
+
+.item-post a{
+	text-decoration: none;
+	color: black;
+}
+
+.item-post a:hover{
+	color: #09bd8f;
+}
+.item-post .chua-anh2{
+	min-width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.item-post ul{
+	list-style: none;
+	padding-left: 18px;
+}
+.item-post ul li{
+	float: left;
+	margin: auto;
+	font-size: 12px;
+	padding: 5px;
+}
+
+.item-post .card-block p{
+	font-size: 12px;
+}
+
+.item-post:hover img{
+	transform: scale(1.5);
+	opacity: 0.7;
+}
