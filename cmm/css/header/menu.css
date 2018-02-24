@@ -7,7 +7,7 @@
 	color: yellow;
 }
 
-/*============= MENU LEFT ============*/
+/*============= END MENU LEFT ============*/
 
 /*============= MENU RIGHT ============*/
 .dropdown:hover>.dropdown-menu {
@@ -47,7 +47,6 @@
 .layer3 ul{
 	list-style-type: none;
 	padding: 0px;
-	margin-left: 10px;
 }
 .layer3 ul li{
 	float: left;

@@ -105,3 +105,257 @@
 }
 
 /*=============END TINH TP===========*/
+
+/*==============DESTINATION==============*/
+
+.destination{
+	position: relative;
+	background-image: url("../images/background/1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 50px;
+}
+
+.destination::before {
+    width: 100%;
+    content: " ";
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block !important;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.title{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.title h3{
+	text-align: center;
+	font-weight: 700 !important;
+	color: #000;
+	position: relative;
+	z-index: 10;
+	margin-top: 30px;
+}
+
+.title p{
+	color: #7d7d7d;
+	line-height: 23px;
+	font-style: bold;
+	font-weight: 500;
+}
+
+.destination .thumbnail-padding{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+}
+
+.destination .destination-grid{
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	cursor: default;
+	transition: 2s;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+.destination .destination-grid img{
+	display: block;
+	position: relative;
+	transform: scaleY(1);
+	transition: all .7s ease-in-out;
+	width: 100%;
+	height: auto;
+}
+
+.destination .destination-grid:hover img{
+	transform: scale(1.5);
+}
+
+.destination .destination-grid .mask{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.destination .destination-grid .destination-name{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	text-align: right;
+}
+
+.destination .destination-grid .destination-name h4{
+	color: white;
+	max-width: 250px;
+	height: 30px;
+	overflow: hidden;
+}
+
+.destination .destination-grid:hover .destination-name h4{
+	color: white;
+	/*font-weight: 700;*/
+	padding: 5px 7px;
+	background-colo: ;r: #f94141;
+	/*border: 1px solid #f94141;*/
+	border-radius: 3px;
+}
+
+.destination .destination-grid .destination-name h5{
+	color: red;
+	font-size: 14px;
+}
+
+.destination .destination-grid .destination-icon{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	color: white;
+	background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0, rgba(0,0,0,0.4) 50%, rgba(0,0,0,.7) 100%);
+    padding: 20px;
+}
+.destination .destination-grid .destination-icon a{
+	margin-right: 10px;
+	font-size: 13px;
+	color: #F0FFF4;
+}
+
+/*==============END DESTINATION==============*/
+
+/*==============HOTEL==============*/
+
+.hotel{
+	background-color: #f8f8f8;
+	padding: 30px;
+	padding-bottom: 70px;
+}
+.hotel-item{
+	background-color: #fff;
+	margin-bottom: 20px;
+	position: relative;
+	box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.03);
+}
+
+.hotel-item{
+	background-color: #fff;
+	margin-bottom: 20px;
+	position: relative;
+	box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.03);
+}
+
+.hotel-item .hotel-image{
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	width: 32%;
+	display: table-cell;
+}
+
+.hotel-item .hotel-image .img{
+	position: relative;
+    z-index: 1;
+}
+
+.hotel-item .hotel-image img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+	transition: 0.5s;
+}
+
+.hotel-item .hotel-body{
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+	width: 43%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.hotel-item .hotel-body .ratting{
+	color: #fec107 !important;
+	font-size: 12px;
+}
+.hotel-item .hotel-body h4{
+	font-size: 16px;
+}
+
+.hotel-item .hotel-body p{
+	color: #bebebe;
+    font-size: 13px;
+    line-height: 21px;
+    max-height: 63px;
+    width: auto;
+    overflow: hidden;
+}
+
+.hotel-item .hotel-right{
+	overflow: hidden;
+	width: 25%;
+	display: table-cell;
+	vertical-align: middle;
+	border-left: 1px solid #ddd;
+	text-align: center;
+	padding: 15px;
+}
+
+.hotel-item:hover{
+	box-shadow: 8px 5px 8px 2px #eee;
+}
+
+.hotel-item:hover img{
+	background: #ffc107;
+	opacity: 1;
+	/*transform: rotate(60deg);*/
+	transform: scale(1.5);
+}
+
+/*==============END HOTEL==============*/
+
+/*==============FOOTER==============*/
+
+footer{
+	background-color: #242121;
+    color: #fff;
+    width: 100%;
+    /*position: fixed;*/
+    bottom: 0;
+    z-index: 0;
+    padding-top: 100px;
+}
+
+footer .address{
+	padding-bottom: 10px;
+	/*float: left;*/
+}
+
+footer p{
+	color: #898989;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 23px;
+}
+
+footer .address i{
+	color: #fff;
+}
+
+footer .address span{
+	margin-left: 10px;
+	color: #898989;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+
+/*==============END FOOTER==============*/
