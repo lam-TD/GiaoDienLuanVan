@@ -409,8 +409,9 @@
 .post .post-image img{
 	position: relative;
 	display: block;
-	max-width: 100%;
+	width: 100%;
 	min-height: 165.75px;
+	max-height: 165.75px;
 	height: auto;
 	transition: 2s;
 }
