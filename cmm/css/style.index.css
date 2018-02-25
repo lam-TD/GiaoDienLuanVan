@@ -504,7 +504,8 @@ footer{
     /*position: fixed;*/
     bottom: 0;
     z-index: 0;
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 footer .address{
@@ -530,5 +531,19 @@ footer .address span{
 	font-weight: 600;
 }
 
+footer .footer-text h3{
+	padding-bottom: 10px;
+}
+
+footer .footer-text a{
+	text-decoration: none;
+	color: #898989;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+footer .footer-text a:hover{
+	color: yellow;
+}
 
 /*==============END FOOTER==============*/
