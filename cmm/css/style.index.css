@@ -136,6 +136,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-bottom: 50px;
+	background-attachment: fixed;
 }
 
 .destination::before {
@@ -351,6 +352,7 @@
 	background-image: url("../images/background/2.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 }
 .post .post-wiget{
 	background-color: #fff;
