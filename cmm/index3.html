@@ -15,6 +15,34 @@
 	<link rel="stylesheet" href="css/header/menu.css">
 </head>
 <body>
+	<div class="icon-bar">
+		<ul>
+			<li class="search">
+				<a href="###">
+					<div class="icon"><i class="fas fa-search"></i></div>
+					<div class="slider">
+						<p>Search</p>
+					</div>
+				</a>
+			</li>
+			<li class="facebook">
+				<a href="#">
+					<div class="icon"><i class="fab fa-facebook-f"></i></div>
+					<div class="slider">
+						<p>Facebook</p>
+					</div>
+				</a>
+			</li>
+			<li class="google">
+				<a href="#">
+					<div class="icon"><i class="fab fa-google-plus-g"></i></div>
+					<div class="slider">
+						<p>Google</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
 	<div class="layer-father">
 		<div class="layer1">
 			<img src="images/maxresdefault.jpg" alt="">
@@ -77,6 +105,91 @@
 						<div id="myOverlay" class="overlay">
 						  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
 						  <div class="overlay-content">
+						  	<div class="selectTinhTp">
+						  		<div class="nutchon">
+						  			<input id="btn-select" type="button" value="All" onclick="toggleSelect()">
+						  			<div class="select-content" id="select-content-id">
+							  			<div class="caption">
+							  				<div class="caption-h5">
+							  					<div class="mui-ten"></div>
+							  					<h5><i class="fas fa-globe"></i> Tỉnh thành phố</h5>
+							  				</div>
+							  					
+							  				<ul>
+							  					<li onclick="selectItemTinhTp()"><a href="" data-id="">
+							  							<label id="item-select" data-name="Cần Thơ">Can Tho</label>
+							  							<span class="float-right">12345</span>
+							  						</a>
+							  					</li>
+							  					<li><a href="">
+							  							TP.HCM
+							  							<span class="float-right">12.000</span>
+							  						</a>
+							  					</li>
+							  					<li><a href="">
+							  							TP.HCM
+							  							<span class="float-right">12.000</span>
+							  						</a>
+							  					</li>
+							  					<li><a href="">
+							  							TP.HCM
+							  							<span class="float-right">12.000</span>
+							  						</a>
+							  					</li>
+							  					<li><a href="">
+							  							TP.HCM
+							  							<span class="float-right">12.000</span>
+							  						</a>
+							  					</li>
+							  					<li><a href="">
+							  							TP.HCM
+							  							<span class="float-right">12.000</span>
+							  						</a>
+							  					</li>
+							  					<li><a href="">
+							  							TP.HCM
+							  							<span class="float-right">12.000</span>
+							  						</a>
+							  					</li>
+							  					<li><a href="">
+							  							TP.HCM
+							  							<span class="float-right">12.000</span>
+							  						</a>
+							  					</li>
+							  					<li><a href="">
+							  							TP.HCM
+							  							<span class="float-right">12.000</span>
+							  						</a>
+							  					</li>
+							  					<li><a href="">
+							  							TP.HCM
+							  							<span class="float-right">12.000</span>
+							  						</a>
+							  					</li>
+							  					<li><a href="">
+							  							TP.HCM
+							  							<span class="float-right">12.000</span>
+							  						</a>
+							  					</li>
+							  					<li><a href="">
+							  							TP.HCM
+							  							<span class="float-right">12.000</span>
+							  						</a>
+							  					</li>
+							  					<li><a href="">
+							  							TP.HCM
+							  							<span class="float-right">12.000</span>
+							  						</a>
+							  					</li>
+							  				</ul>
+							  			</div>
+							  		</div>
+						  		</div>
+						  		
+						  		
+						  	</div>
+						  	
+							
 						    <form action="/action_page.php">
 						      <input type="text" placeholder="Search.." name="search">
 						      <button type="submit"><i class="fa fa-search"></i></button>
@@ -86,7 +199,10 @@
 				    </div>
 				    <div class="taikhoan">
 						<ul class="navbar-nav mr-auto">
-						  <li class="nav-item"><a class="nav-link openBtn" href="#" onclick="openSearch()"><i class="fas fa-search"></i></a></li>
+						  <li class="nav-item">
+						  	<a class="nav-link openBtn" href="#" onclick="openSearch()"><i class="fas fa-search"></i>
+						  	</a>
+						  </li>
 					      <li class="nav-item dropdown">
 					        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					          <i class="far fa-user-circle"></i>
@@ -940,6 +1056,28 @@
 		    }
 		})
 
+		
+		document.getElementById("item-select").setAttribute("data-name","Hà Nội");
+
+		// hien thi select Tinh TP
+		function toggleSelect(){
+			var e = document.getElementById("select-content-id");
+			if (e.style.display == "none" || e.style.display == "") 
+				e.style.display = "block";
+			else
+				e.style.display = "none";
+			// alert("Bạn vừa click vào button");
+		}
+
+		//click chon Tinh Tp
+		function selectItemTinhTp(){
+			var e = document.getElementsByClassName("item-select").getAttribute("data-name");
+			
+			// document.getElementById("btn-select").value = e;
+			alert(e);
+		}
+
+
 		// Open the full screen search box 
 		function openSearch() {
 		  document.getElementById("myOverlay").style.display = "block";
@@ -959,7 +1097,9 @@
 		      	$("#menu").addClass("fixed-topp");
 		      	$("#menu").removeClass("bg-light");
 		        $("#menu").addClass("scroll-menu");
+		        $(".icon-bar").removeClass("hidden");
 		      } else {
+		      	$(".icon-bar").addClass("hidden");
 		        $("#menu").removeClass("scroll-menu");
 		        $("#menu").removeClass("fixed-topp");
 		        $("#menu").addClass("bg-light");
