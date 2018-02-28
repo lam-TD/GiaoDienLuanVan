@@ -142,3 +142,37 @@
 }
 
 /*================== END SELECT SEARCH ==============*/
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+.big-search{
+
+}
+.box-search{
+  position: fixed;
+  top: 25%;
+  left: 23%;
+   width: 50%; 
+  height: 300px;
+  background-color: white;
+  z-index: 2;
+}
+
+.box-search .input-group{
+  padding-top: 10px;
+}
+
+.nen-search{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: #5d5d5d6b;
+}
+.select-btn{
+  
+}
