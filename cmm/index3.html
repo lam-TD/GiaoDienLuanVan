@@ -116,68 +116,21 @@
 							  				</div>
 							  					
 							  				<ul>
-							  					<li onclick="selectItemTinhTp()"><a href="" data-id="">
-							  							<label id="item-select" data-name="Cần Thơ">Can Tho</label>
-							  							<span class="float-right">12345</span>
-							  						</a>
-							  					</li>
-							  					<li><a href="">
-							  							TP.HCM
+							  					<li class="selectItem" data-name="Cân Thơ">
+							  						<a href="" class="selectItem-name">
+							  							<label>Cần Thơ</label>
 							  							<span class="float-right">12.000</span>
 							  						</a>
 							  					</li>
-							  					<li><a href="">
-							  							TP.HCM
+							  					<li class="selectItem" data-name="HCM">
+							  						<a href="" class="selectItem-name">
+							  							<label>HCM</label>
 							  							<span class="float-right">12.000</span>
 							  						</a>
 							  					</li>
-							  					<li><a href="">
-							  							TP.HCM
-							  							<span class="float-right">12.000</span>
-							  						</a>
-							  					</li>
-							  					<li><a href="">
-							  							TP.HCM
-							  							<span class="float-right">12.000</span>
-							  						</a>
-							  					</li>
-							  					<li><a href="">
-							  							TP.HCM
-							  							<span class="float-right">12.000</span>
-							  						</a>
-							  					</li>
-							  					<li><a href="">
-							  							TP.HCM
-							  							<span class="float-right">12.000</span>
-							  						</a>
-							  					</li>
-							  					<li><a href="">
-							  							TP.HCM
-							  							<span class="float-right">12.000</span>
-							  						</a>
-							  					</li>
-							  					<li><a href="">
-							  							TP.HCM
-							  							<span class="float-right">12.000</span>
-							  						</a>
-							  					</li>
-							  					<li><a href="">
-							  							TP.HCM
-							  							<span class="float-right">12.000</span>
-							  						</a>
-							  					</li>
-							  					<li><a href="">
-							  							TP.HCM
-							  							<span class="float-right">12.000</span>
-							  						</a>
-							  					</li>
-							  					<li><a href="">
-							  							TP.HCM
-							  							<span class="float-right">12.000</span>
-							  						</a>
-							  					</li>
-							  					<li><a href="">
-							  							TP.HCM
+							  					<li class="selectItem" data-name="Hà Nội">
+							  						<a href="" class="selectItem-name">
+							  							<label>Hà Nội</label>
 							  							<span class="float-right">12.000</span>
 							  						</a>
 							  					</li>
@@ -1057,7 +1010,7 @@
 		})
 
 		
-		document.getElementById("item-select").setAttribute("data-name","Hà Nội");
+		// document.getElementById("item-select").setAttribute("data-name","Hà Nội");
 
 		// hien thi select Tinh TP
 		function toggleSelect(){
@@ -1071,10 +1024,10 @@
 
 		//click chon Tinh Tp
 		function selectItemTinhTp(){
-			var e = document.getElementsByClassName("item-select").getAttribute("data-name");
+			// var e = document.getElementsByClassName("item-select").getAttribute("data-name");
 			
-			// document.getElementById("btn-select").value = e;
-			alert(e);
+			// // document.getElementById("btn-select").value = e;
+			// alert(e);
 		}
 
 
@@ -1108,5 +1061,7 @@
 		    });
 		});
 	</script>
+
+	<script src="js/tdl.js"></script>
 </body>
 </html>

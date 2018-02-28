@@ -131,12 +131,14 @@
 
 .selectTinhTp .select-content ul li:hover{
   background-color: #eee;
+  cursor: pointer;
 }
 
 .selectTinhTp .select-content ul li a{
   color: black !important;
   text-decoration: none;
   font-size: 13px;
+  /*display: block;*/
 }
 
 /*================== END SELECT SEARCH ==============*/
