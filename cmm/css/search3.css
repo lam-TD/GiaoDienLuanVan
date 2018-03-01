@@ -55,8 +55,8 @@
 
 #cha-text-search .btn-filter{
 	position: absolute;
-    top: 0;
-    right: 121px;
+    top: -1px;
+    right: 105px;
 }
 
 #cha-text-search .btn-filter a{
@@ -72,9 +72,9 @@
 
 #navbarSupportedContent ul li .filter-content{
 	position: absolute;
-    top: 34px;
+    top: 41px;
     left: 1px;
-    width: 358px;
+    width: 331px;
     height: 274px;
     background-color: white;
     box-shadow: 1px 3px 27px 0px;
@@ -83,8 +83,15 @@
     transition: 0.5s ease;
 }
 
-#navbarSupportedContent ul li .filter-content:after{
-	
+div#id-filter-content:after{
+	content: "";
+    position: absolute;
+    top: -16px;
+    right: 13px;
+    width: 0;
+    height: 0;
+    border: 8px #f8f9fa0d solid;
+    border-bottom-color: #eee;
 }
 
 .hienthi-nhe{

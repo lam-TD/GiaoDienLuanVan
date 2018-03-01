@@ -27,7 +27,10 @@ document.addEventListener("DOMContentLoaded",function () {
 				result++;
 			}
 		}
-		alert(result);
+		document.getElementById("icon-bo-loc").style.display = "none";
+		document.getElementById("id-btn-filter").innerHTML = '<span style="color:red;width:20px;height:20px; font-size:14px;">' + 'Bộ lọc ' + result +'</span>';
+
+		document.getElementById("id-filter-content").classList.remove("hienthi-nhe"); // hihe id-filter-content
 	}
 
 		

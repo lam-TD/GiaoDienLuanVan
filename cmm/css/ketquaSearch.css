@@ -1,0 +1,83 @@
+.layer-father{
+	background-color: cadetblue;
+}
+.layer2 .bg-light {
+    /* background-color: #00000047!important; */
+    background: transparent !important;
+}
+
+.to{
+	margin-top: 87px;
+	background-color: #eee;
+}
+.to .toto{
+	background-color: white;
+}
+
+#body-search{
+
+}
+
+.tabSearch{
+
+}
+#body-search #content-search{
+
+}
+
+.bo-loc-search{
+
+}
+.bo-loc-search ul{
+	list-style-type: none;
+	display: inline-block;
+	margin-top: 10px;
+	background-color: #eee;
+	width: 100%;
+	padding-left: 0px;
+	border: 1px solid #00000036;
+}
+.bo-loc-search li{
+	float: left;
+	padding: 4px 15px;
+	border-right: 1px solid #00000036;
+}
+.bo-loc-search li:hover{
+	background-color: white;
+}
+.bo-loc-search li a{
+	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+	font-size: 14px !important;
+}
+.bo-loc-search li:hover a{
+	color: red !important;
+}
+
+.container .row .danh-muc{
+	background-color: #eee;
+	box-shadow: 1px 3px 8px 0px;
+}
+.container .row .danh-muc h6{
+	padding: 5px 15px;
+	text-align: center;
+	background-color: #77707075;
+	margin: 0px;
+}
+
+.container .row .danh-muc ul {
+	list-style-type: none;
+	padding: 0px;
+}
+
+.container .row .danh-muc ul li{
+	background-color: #eee;
+	padding: 5px 10px;
+	border-bottom: 1px solid #90888833;
+}
+
+.container .row .danh-muc ul li a{
+	text-decoration: none;
+	color: black;
+}
