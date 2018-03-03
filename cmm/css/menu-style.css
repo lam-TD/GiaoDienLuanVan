@@ -32,6 +32,7 @@ body,html{
 #dangnhap-dangky ul li a.btn-login{
 	font-size: 14px;
 	font-weight: 400;
+	cursor: pointer;
 }
 
 #dangnhap-dangky ul li:hover a.btn-login{
@@ -50,15 +51,23 @@ body,html{
 }
 
 li.nav-item.btn-select{
+	position: relative;
 	margin-right: 5px;
 	border-radius: 2px;
 	font-weight: 500;
+	cursor: pointer;
 }
 
 #navbarSupportedContent ul li a{
 	padding: 6px 10px;
 	margin-top: 2px;
 	border: 1px solid #ced4da;
+}
+
+#navbarSupportedContent ul li .a-select{
+	position: relative;
+	width: 131px;
+	overflow: hidden;
 }
 
 nav.navbar.navbar-expand-sm.navbar-light.menu{
@@ -146,7 +155,9 @@ input.input-search2{
 	width: 100%;
 	height: 100%;
 	border: none;
-	padding-left: 35px;
+	padding: 0 !important;
+    margin: 0 !important;
+	padding-left: 35px !important;
 }
 
 button.btn-search2{
@@ -178,3 +189,247 @@ button.btn-search2{
 	transition: 0.2s ease;
 }
 /* end cuon chuot */
+
+
+/* so xuong*/
+
+.select-content{
+	position: absolute;
+    z-index: 3;
+    top: 50px;
+    left: -52px;
+    background-color: white;
+    height: 300px;
+    width: 220px;
+    box-shadow: 1px 2px 18px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.select-content:after{
+	content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border: 9px solid #ffffff00;
+    top: -18px;
+    left: 50%;
+    border-bottom-color: #eee;
+}
+
+.caption-h5{
+    background-color: #eee;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.caption-h5 h5{
+	 font-size: 15px;
+	 padding:0;
+	 margin:0;
+}
+
+.select-content ul {
+    height: 272px;
+    list-style: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0px !important;
+}
+
+.select-content ul li {
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.select-content ul li:hover {
+    background-color: #eceaea;
+}
+
+#navbarSupportedContent ul .selectItem a{
+    color: black !important;
+    border: none;
+    font-size: 13px;
+    width: 100%;
+    /*display: inline-block;*/
+}
+
+#navbarSupportedContent ul .selectItem a label{
+    margin: 0;
+}
+
+#navbarSupportedContent ul .selectItem a span{
+    font-size: 12px;
+    color: #b7b7b7;
+    padding-top: 3px;
+    padding-right: 3px;
+}
+
+#navbarSupportedContent ul .selectItem2 a{
+    color: black !important;
+    border: none;
+    font-size: 13px;
+    width: 100%;
+    /*display: inline-block;*/
+}
+
+#navbarSupportedContent ul .selectItem2 a label{
+    margin: 0;
+}
+
+#navbarSupportedContent ul .selectItem2 a span{
+    font-size: 12px;
+    color: #b7b7b7;
+    padding-top: 3px;
+    padding-right: 3px;
+}
+
+.click-select{
+	box-shadow: 2px 5px 5px 2px black;
+	transition: 0.5s ease;
+}
+
+.click-select a{
+	background-color: #ffffff9c;
+	transition: 0.5s ease;
+}
+
+.hienthi{opacity: 1;visibility: visible; transition: 0.9s ease;}
+
+/* end so xuong*/
+
+
+/* login */
+
+
+
+.modal-login{
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background-color: #00000061;
+    overflow: auto;
+    display: none;
+}
+
+.modal-login .modal-content-dangky{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	margin: 5% auto 15% auto;
+	background-color: white;
+	padding: 20px;
+	/*display: none;*/
+}
+
+.modal-login .modal-content-dangky .content-login{
+	padding-bottom: 20px;
+}
+
+.modal-login .modal-content-dangky .content-login-with{
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	padding-top: 18px;
+	padding-bottom: 25px;
+}
+
+.modal-login .modal-content-dangky .content-login-with .row .col button{
+	width: 100%;
+	font-weight: 500;
+	color: white;
+}
+
+.modal-login .modal-content-dangky .content-login-with a{
+	color: white !important;
+	font-weight: 500;
+	width: 100%;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.modal-login .modal-content-dangky .content-register{
+	padding-top: 10px;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* end login*/
+
+/*==============FOOTER==============*/
+
+footer{
+	background-color: #242121;
+    color: #fff;
+    width: 100%;
+    /*position: fixed;*/
+    bottom: 0;
+    z-index: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer .address{
+	padding-bottom: 10px;
+	/*float: left;*/
+}
+
+footer p{
+	color: #898989;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 23px;
+}
+
+footer .address i{
+	color: #fff;
+}
+
+footer .address span{
+	margin-left: 10px;
+	color: #898989;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+footer .footer-text h3{
+	padding-bottom: 10px;
+}
+
+footer .footer-text a{
+	text-decoration: none;
+	color: #898989;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+footer .footer-text a:hover{
+	color: yellow;
+}
+
+/*==============END FOOTER==============*/

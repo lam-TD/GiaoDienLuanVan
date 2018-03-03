@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>VietNamTravel</title>
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script src="js/fontawesome-all.min.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/search.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/place.css">
+	<link rel="stylesheet" href="css/menu-style.css">
+</head>
+<body>
+
+	<!-- ================== header ============= -->
+	<section class="header" style="background-image: url('../cmm/images/background/3.jpg');">
+		<div class="container">
+			<div class="layer-top" id="id-layer-top">
+				<div class="container">
+					<nav class="navbar navbar-expand-lg navbar-light">
+						<a class="navbar-brand" href="#">VietNamTour</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item btn-select" >
+									<a id="a-tinhTP" class="nav-link a-select" data-hienthi="tinhTP" href="#">Cần Thơ <i class="fas fa-angle-down"></i></a>
+
+									<div class="select-content" id="tinhTP">
+										<div class="caption-h5">
+						  					<h5><i class="fas fa-globe"></i> Tỉnh thành phố</h5>
+						  				</div>
+
+						  				<ul>
+						  					<li class="selectItem" data-name="Cần Thơ">
+						  						<a href="" class="selectItem-name">
+						  							<label>Cần Thơ</label>
+						  							<span class="float-right">12.000</span>
+						  						</a>
+						  					</li>
+						  					<li class="selectItem" data-name="HCM">
+						  						<a href="" class="selectItem-name">
+						  							<label>HCM</label>
+						  							<span class="float-right">12.000</span>
+						  						</a>
+						  					</li>
+						  					<li class="selectItem" data-name="Hà Nội">
+						  						<a href="" class="selectItem-name">
+						  							<label>Hà Nội</label>
+						  							<span class="float-right">12.000</span>
+						  						</a>
+						  					</li>
+						  				</ul>
+									</div>
+								</li> <!-- end btn-select -->
+								<li class="nav-item btn-select">
+									<a id="a-danhmuc" class="nav-link a-select" data-hienthi="danhmuc" href="#">Tham quan <i class="fas fa-angle-down"></i></a>
+									<div class="select-content" id="danhmuc">
+										<div class="caption-h5">
+						  					<h5><i class="fas fa-globe"></i> Danh mục</h5>
+						  				</div>
+
+						  				<ul>
+						  					<li class="selectItem2" data-name="Cân Thơ">
+						  						<a href="" class="selectItem-name2">
+						  							<label>Tham quan</label>
+						  							<span class="float-right">1234</span>
+						  						</a>
+						  					</li>
+						  					<li class="selectItem2" data-name="HCM">
+						  						<a href="" class="selectItem-name2">
+						  							<label>Ăn uống</label>
+						  							<span class="float-right">12.000</span>
+						  						</a>
+						  					</li>
+						  					<li class="selectItem2" data-name="Hà Nội">
+						  						<a href="" class="selectItem-name2">
+						  							<label>Khách sạn</label>
+						  							<span class="float-right">12.000</span>
+						  						</a>
+						  					</li>
+						  					<li class="selectItem2" data-name="Hà Nội">
+						  						<a href="" class="selectItem-name2">
+						  							<label>Vui chơi</label>
+						  							<span class="float-right">12.000</span>
+						  						</a>
+						  					</li>
+						  					<li class="selectItem2" data-name="Hà Nội">
+						  						<a href="" class="selectItem-name2">
+						  							<label>Phương tiện</label>
+						  							<span class="float-right">12.000</span>
+						  						</a>
+						  					</li>
+						  				</ul>
+									</div>
+								</li><!-- end btn-select -->
+								<li class="nav-item">
+									<form class="form-inline form-search">
+										<label class="boloc"><i class="fas fa-search"></i></label>
+										<input class="form-control input-search" type="search" placeholder="Search" aria-label="Search">
+										<button class="btn btn-outline-success btn-search" type="submit">Tìm kiếm</button>
+									</form>
+								</li>
+							</ul>
+							<div class="form-inline my-2 my-lg-0" id="dangnhap-dangky">
+								<ul class="navbar-nav mr-auto">
+									<li class="nav-item"><a class="nav-link btn-login" id="btn-dangnhap">Đăng nhập</a></li>
+									<!-- Modal login -->
+									<div id="id01" class="modal-login">
+										<div class="container">
+											<div class="row">
+												<div class="col"></div>
+												<div class="col-6">
+													<form action="" class="modal-content-dangky animate">
+														<span onclick="document.getElementById('id01').style.display='none'" 
+														class="close" title="Close Modal">&times;</span>
+														<h3 class="text-center">Login</h3>
+														<div class="content-login">
+															<input type="text" placeholder="Username...">
+															<input type="password" placeholder="Password...">
+															<div class="row">
+																<div class="col">
+																	<button type="submit" class="btn btn-success" style="width: 100%; font-weight: 500; margin-top: 10px;">Log In</button>
+																</div>
+															</div>
+														</div>
+														<div class="content-login-with">
+															<h4 class="text-center">Login</h4>
+															<p class="text-center">With your social media acconut</p>
+															<div class="row text-center">
+																<div class="col"><a href="" class="btn" style="background-color: #3b5998;"><i class="fab fa-facebook-f"></i> Facebook</a></div>
+																<div class="col"><a href="" class="btn" style="background-color: #d34836;"><i class="fab fa-google-plus-g"></i> Google+</a></div>
+															</div>
+														</div>
+														<div class="content-register">
+															<h6 class="text-center">Đăng ký tài khoản mới tại đây</h6>
+															<div class="row">
+																<div class="col">
+																	<a class="btn btn-info" style="width: 100%; font-weight: 500;">Register</a>
+																</div>
+															</div>
+														</div>
+													</form>
+												</div>
+												<div class="col"></div>
+											</div>
+										</div>
+									</div><!-- end Modal login -->
+									<li class="nav-item"><a class="nav-link btn-login">Đăng ký</a></li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>	
+			</div> <!-- end layer-top -->
+			<div class="layer-menu" id="id-layer-menu">
+				<div class="container" id="id-container">
+					<nav class="navbar navbar-expand-sm navbar-light menu">
+						<div class="collapse navbar-collapse" id="">
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item active-menu">
+									<a class="nav-link" href="#"><i class="fas fa-home"></i></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Địa điểm</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="">
+										Bài viết
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="">
+										Top 10
+									</a>
+								</li>
+								<li class="nav-item" id="hidden-formSearch" style="display: none; transition: 0.5s;">
+									<form action="" class="form-search-menu">
+										<label class="boloc2"><i class="fas fa-search"></i></label>
+										<input type="text" class="input-search2">
+										<button class="btn-search2">Tìm kiếm</button>
+									</form>
+								</li>
+							</ul>
+							<div class="form-inline my-2 my-lg-0">
+								<ul class="navbar-nav mr-auto">
+									<li class="nav-item"><a class="nav-link"><i class="fas fa-bell"></i></a></li>
+									<li class="nav-item"><a class="nav-link"><i class="fas fa-plus"></i></a></li>
+									<li class="nav-item"><a class="nav-link"><img src="images/icons/vn.png" alt="" style="width: 23px;height: 23px;"></a></li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>	
+			</div> <!-- end layer-menu -->
+		</div>
+	</section>
+	<!-- ================== end header ============= -->
+
+
+
+
+
+	<!-- ================== FOOTER ============= -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-12 col-12">
+					<p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.</p>
+					<div class="address">
+						<i class="fas fa-map-marker"></i>
+						<span>1234 Vo Van Kiet CanTho</span>
+					</div>
+					<div class="address">
+						<i class="fas fa-phone"></i>
+						<span>0939 789 999</span>
+					</div>
+					<div class="address">
+						<i class="fas fa-envelope"></i>
+						<span>vietnamtravel@gmail.com</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 col-12">
+					<div class="footer-text">
+						<h3>Information</h3>
+						<ul>
+							<li><a href="#">Introduction</a></li>
+							<li><a href="#">Help</a></li>
+							<li><a href="#">Terms and Conditions</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">Gop y</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 col-12">
+					<div class="footer-text">
+						<h3>Connect</h3>
+						<ul>
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Instagram</a></li>
+							<li><a href="#">Google</a></li>
+							<li><a href="#">Twitter</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 col-12">
+					<div class="footer-text">
+						<h3>Information</h3>
+						<ul>
+							<li><a href="#">Introduction</a></li>
+							<li><a href="#">Help</a></li>
+							<li><a href="#">Terms and Conditions</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- ================== END FOOTER ============= -->
+
+
+	<!-- script -->
+	<script src="js/menu-style.js"></script>
+</body>
+</html>
