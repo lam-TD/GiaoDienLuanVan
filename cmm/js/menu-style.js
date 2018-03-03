@@ -88,4 +88,37 @@ document.addEventListener("DOMContentLoaded",function () {
 	    }
 	}
 
+	// call auto slide
+	autoSlide();
+
+	// auto slide
+	function autoSlide() {
+		var timeSlide = setInterval(function(){
+			var vitriSlide = 0;
+			var currentSlide = document.querySelector('.img-carolsel ul li.active-img');
+			// tinh vi tri slide dang active
+			for (vitriSlide = 0; currentSlide = currentSlide.previousElementSibling; vitriSlide++) {} 
+			console.log(vitriSlide)
+			var slide = document.querySelectorAll('.img-carolsel ul li');
+			console.log(slide.length-1);
+			if (vitriSlide < (slide.length-1)) 
+			{
+				for (var i = 0; i < slide.length; i++) {
+					slide[i].classList.remove('active-img');
+				}
+				slide[vitriSlide].nextElementSibling.classList.add('active-img');
+			}
+			else
+			{
+				for (var i = 0; i < slide.length; i++) {
+					slide[i].classList.remove('active-img');
+				}
+				slide[0].classList.add('active-img');
+			}
+			
+		},2000);
+	}
+
+
+
 },false);
