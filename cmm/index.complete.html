@@ -13,9 +13,41 @@
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/place.css">
+	<link rel="stylesheet" href="css/style.index.css">
 	<link rel="stylesheet" href="css/menu-style.css">
 </head>
 <body>
+	
+	<!-- ========== icon =========== -->
+	<div class="icon-bar">
+		<ul>
+			<li class="search">
+				<a href="###">
+					<div class="icon"><i class="fas fa-search"></i></div>
+					<div class="slider">
+						<p>Search</p>
+					</div>
+				</a>
+			</li>
+			<li class="facebook">
+				<a href="#">
+					<div class="icon"><i class="fab fa-facebook-f"></i></div>
+					<div class="slider">
+						<p>Facebook</p>
+					</div>
+				</a>
+			</li>
+			<li class="google">
+				<a href="#">
+					<div class="icon"><i class="fab fa-google-plus-g"></i></div>
+					<div class="slider">
+						<p>Google</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- ========== end icon =========== -->
 
 	<!-- ================== header ============= -->
 	<section class="header">
@@ -40,11 +72,11 @@
 			<div class="noidung-text">
 				
 			</div>	
-		</div>
+		</div> <!-- end img-carolsel -->
 		<div class="container">
 			<div class="layer-top" id="id-layer-top">
 				<div class="container">
-					<nav class="navbar navbar-expand-lg navbar-light">
+					<nav class="navbar navbar-expand-lg navbar-light menuTop" id="id-menu-Top">
 						<a class="navbar-brand" href="#">VietNamTour</a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
@@ -180,55 +212,897 @@
 							</div>
 						</div>
 					</nav>
-				</div>	
-			</div> <!-- end layer-top -->
-			<div class="layer-menu" id="id-layer-menu">
-				<div class="container" id="id-container">
-					<nav class="navbar navbar-expand-sm navbar-light menu">
-						<div class="collapse navbar-collapse" id="">
-							<ul class="navbar-nav mr-auto">
-								<li class="nav-item active-menu">
-									<a class="nav-link" href="#"><i class="fas fa-home"></i></a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">Địa điểm</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="">
-										Bài viết
-									</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="">
-										Top 10
-									</a>
-								</li>
-								<li class="nav-item" id="hidden-formSearch" style="display: none; transition: 0.5s;">
-									<form action="" class="form-search-menu">
-										<label class="boloc2"><i class="fas fa-search"></i></label>
-										<input type="text" class="input-search2">
-										<button class="btn-search2">Tìm kiếm</button>
-									</form>
-								</li>
-							</ul>
-							<div class="form-inline my-2 my-lg-0">
-								<ul class="navbar-nav mr-auto">
-									<li class="nav-item"><a class="nav-link"><i class="fas fa-bell"></i></a></li>
-									<li class="nav-item"><a class="nav-link"><i class="fas fa-plus"></i></a></li>
-									<li class="nav-item"><a class="nav-link"><img src="images/icons/vn.png" alt="" style="width: 23px;height: 23px;"></a></li>
+					<div class="con" id="id-con">
+						<div class="row">
+							<div class="col-md-8 col-12">
+								<div class="right-menu-lam">
+									<ul class="float-left">
+										<li class="active-menu"><a href=""><i class="fas fa-home"></i></a></li>
+										<li class="hover-menu"><a href="">Địa điểm</a></li>
+										<li class="hover-menu"><a href="">Bài viết</a></li>
+										<li class="" id="hidden-formSearch" style="display: none; transition: 0.5s;">
+											<form action="" class="form-search-menu">
+												<label class="boloc2"><i class="fas fa-search"></i></label>
+												<input type="text" class="input-search2">
+												<button class="btn-search2">Tìm kiếm</button>
+											</form>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-4 col-12">
+								<ul class="float-right left-menu-lam">
+									<li class="cha-notification">
+										<a class="a-notification active-thongbao" data-id-hienthi="id-thongBao"><i class="fas fa-bell"></i></a>
+										<div class="notification" id="id-thongBao">
+											<div class="title-nofi">
+												<h6 class="text-center" style="padding: 0; font-weight: 700;">Thông báo</h6>
+											</div>
+											<div class="content-nofi">
+												<ul id="body-nofi">
+													<li>
+														<a href="" class="a-content-nofi">
+															<div class="anh-nofi">
+																<img src="images/diadiem.jpg" alt="" class="img-icon-nofi">
+															</div>
+															<p class="text-nofi">
+																Get code suggestions while writing code directly to your Java IDE.
+															</p>	
+														</a>
+													</li>
+													<li>
+														<a href="" class="a-content-nofi">
+															<div class="anh-nofi">
+																<img src="images/diadiem.jpg" alt="" class="img-icon-nofi">
+															</div>
+															<p class="text-nofi">
+																Get code suggestions while writing code directly to your Java IDE.
+															</p>	
+														</a>
+													</li>
+													<li>
+														<a href="" class="a-content-nofi">
+															<div class="anh-nofi">
+																<img src="images/diadiem.jpg" alt="" class="img-icon-nofi">
+															</div>
+															<p class="text-nofi">
+																Get code suggestions while writing code directly to your Java IDE.
+															</p>	
+														</a>
+													</li>
+													<li>
+														<a href="" class="a-content-nofi">
+															<div class="anh-nofi">
+																<img src="images/diadiem.jpg" alt="" class="img-icon-nofi">
+															</div>
+															<p class="text-nofi">
+																Get code suggestions while writing code directly to your Java IDE.
+															</p>	
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="xem text-center">
+												<a href="" style="color: black !important; font-size: 13px; padding: 5px; font-weight: 700;">
+													Xem tất cả
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="cha-notification">
+										<a class="a-notification" data-id-hienthi="id-tuychinh"><i class="fas fa-plus"></i></a>
+										<div class="notification" id="id-tuychinh">
+											<div class="title-nofi">
+												<h6 class="text-center" style="padding: 0; font-weight: 700;">Thông báo</h6>
+											</div>
+											<div class="content-nofi">
+												<ul id="body-nofi">
+													<li>
+														<a href="" class="a-content-nofi">
+															<div class="anh-nofi">
+																<img src="images/diadiem.jpg" alt="" class="img-icon-nofi">
+															</div>
+															<p class="text-nofi">
+																Get code suggestions while writing code directly to your Java IDE.
+															</p>	
+														</a>
+													</li>
+													<li>
+														<a href="" class="a-content-nofi">
+															<div class="anh-nofi">
+																<img src="images/diadiem.jpg" alt="" class="img-icon-nofi">
+															</div>
+															<p class="text-nofi">
+																Get code suggestions while writing code directly to your Java IDE.
+															</p>	
+														</a>
+													</li>
+													<li>
+														<a href="" class="a-content-nofi">
+															<div class="anh-nofi">
+																<img src="images/diadiem.jpg" alt="" class="img-icon-nofi">
+															</div>
+															<p class="text-nofi">
+																Get code suggestions while writing code directly to your Java IDE.
+															</p>	
+														</a>
+													</li>
+													<li>
+														<a href="" class="a-content-nofi">
+															<div class="anh-nofi">
+																<img src="images/diadiem.jpg" alt="" class="img-icon-nofi">
+															</div>
+															<p class="text-nofi">
+																Get code suggestions while writing code directly to your Java IDE.
+															</p>	
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="xem text-center">
+												<a href="" style="color: black !important; font-size: 13px; padding: 5px; font-weight: 700;">
+													Xem tất cả
+												</a>
+											</div>
+										</div>
+									</li>
+									<li><a href=""><i class="fas fa-plus"></i></a></li>
 								</ul>
 							</div>
 						</div>
-					</nav>
+							
+					</div>
 				</div>	
-			</div> <!-- end layer-menu -->
+			</div> <!-- end layer-top -->
 		</div>
 	</section>
 	<!-- ================== end header ============= -->
+	
+	<!-- ==================TINH TP============= -->
+	<section class="tinhthanhpho">
+		<div class="container">
+			<div class="owl-carousel owl-theme">
+			    <div class="item">
+			    	<div class="grid-item">
+			    		<div class="grid-img-thumb">
+			    			<div class="ribbon">
+			    				<span>Top 10</span>
+			    			</div>
+				    		<a href="#"><img src="images/img-BaiViet/4.jpg" alt=""></a>
+				    	</div>
+				    	<div class="grid-content">
+				    		<div class="grid-price text-left">
+				    			<span>1234</span>
+				    			<i class="far fa-hand-peace"></i>
+				    		</div>
+				    		<div class="grid-text">
+				    			<div class="place-name">Cần Thơ</div>
+				    			<span class="pull-right">
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    				</span>
+				    		</div>
+				    	</div>
+			    	</div>    	
+			    </div>
+				<div class="item">
+			    	<div class="grid-item">
+			    		<div class="grid-img-thumb">
+			    			<div class="ribbon">
+			    				<span>Top 2</span>
+			    			</div>
+				    		<a href="#"><img src="images/img-BaiViet/5.jpg" alt=""></a>
+				    	</div>
+				    	<div class="grid-content">
+				    		<div class="grid-price text-left">
+				    			<span>1234</span>
+				    			<i class="far fa-hand-peace"></i>
+				    		</div>
+				    		<div class="grid-text">
+				    			<div class="place-name">Quảng Ninh</div>
+				    			<span class="pull-right">
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    				</span>
+				    		</div>
+				    	</div>
+			    	</div>    	
+			    </div>
+			    <div class="item">
+			    	<div class="grid-item">
+			    		<div class="grid-img-thumb">
+			    			<div class="ribbon">
+			    				<span>Top 10</span>
+			    			</div>
+				    		<a href="#"><img src="images/img-BaiViet/6.jpg" alt=""></a>
+				    	</div>
+				    	<div class="grid-content">
+				    		<div class="grid-price text-left">
+				    			<span>1234</span>
+				    			<i class="far fa-hand-peace"></i>
+				    		</div>
+				    		<div class="grid-text">
+				    			<div class="place-name">Quảng Ninh</div>
+				    			<span class="pull-right">
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    				</span>
+				    		</div>
+				    	</div>
+			    	</div>    	
+			    </div>
+			    <div class="item">
+			    	<div class="grid-item">
+			    		<div class="grid-img-thumb">
+			    			<div class="ribbon">
+			    				<span>Top 10</span>
+			    			</div>
+				    		<a href="#"><img src="images/img-BaiViet/7.jpg" alt=""></a>
+				    	</div>
+				    	<div class="grid-content">
+				    		<div class="grid-price text-left">
+				    			<span>1234</span>
+				    			<i class="far fa-hand-peace"></i>
+				    		</div>
+				    		<div class="grid-text">
+				    			<div class="place-name">Quản Nam</div>
+				    			<span class="pull-right">
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    				</span>
+				    		</div>
+				    	</div>
+			    	</div>    	
+			    </div>
+			    <div class="item">
+			    	<div class="grid-item">
+			    		<div class="grid-img-thumb">
+			    			<div class="ribbon">
+			    				<span>Top 10</span>
+			    			</div>
+				    		<a href="#"><img src="images/img-BaiViet/8.jpg" alt=""></a>
+				    	</div>
+				    	<div class="grid-content">
+				    		<div class="grid-price text-left">
+				    			<span>1234</span>
+				    			<i class="far fa-hand-peace"></i>
+				    		</div>
+				    		<div class="grid-text">
+				    			<div class="place-name">Cần Thơ</div>
+				    			<span class="pull-right">
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    				</span>
+				    		</div>
+				    	</div>
+			    	</div>    	
+			    </div>
+			    <div class="item">
+			    	<div class="grid-item">
+			    		<div class="grid-img-thumb">
+			    			<div class="ribbon">
+			    				<span>Top 10</span>
+			    			</div>
+				    		<a href="#"><img src="images/img-BaiViet/4.jpg" alt=""></a>
+				    	</div>
+				    	<div class="grid-content">
+				    		<div class="grid-price text-left">
+				    			<span>1234</span>
+				    			<i class="far fa-hand-peace"></i>
+				    		</div>
+				    		<div class="grid-text">
+				    			<div class="place-name">Cần Thơ</div>
+				    			<span class="pull-right">
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    				</span>
+				    		</div>
+				    	</div>
+			    	</div>    	
+			    </div>
+			    <div class="item">
+			    	<div class="grid-item">
+			    		<div class="grid-img-thumb">
+			    			<div class="ribbon">
+			    				<span>Top 10</span>
+			    			</div>
+				    		<a href="#"><img src="images/img-BaiViet/4.jpg" alt=""></a>
+				    	</div>
+				    	<div class="grid-content">
+				    		<div class="grid-price text-left">
+				    			<span>1234</span>
+				    			<i class="far fa-hand-peace"></i>
+				    		</div>
+				    		<div class="grid-text">
+				    			<div class="place-name">Cần Thơ</div>
+				    			<span class="pull-right">
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    					<i class="fas fa-star"></i>
+			    				</span>
+				    		</div>
+				    	</div>
+			    	</div>    	
+			    </div> 
+			</div>
+		</div>
+	</section>
+	<!-- ==================END TINH TP============= -->
 
+	<!-- ================== POPULAR DESTINATION============= -->
+	<section class="destination" style="background-image: url('../cmm/images/background/1.jpg');">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<div class="title">
+						<h3 class="">Popular Destination</h3>
+						<p>This is Amazing Travel Agency !</p>
+					</div>
+				</div>
+					
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-12 thumbnail-padding">
+					<div class="destination-grid">
+						<a href=""><img src="images/img-BaiViet/9.jpg" alt=""></a>
+						<div class="destination-name">
+							<h4>Ha Long</h4>
+							<h5>Quang Ninh</h5>
+						</div>
+						<div class="destination-icon">	
+							<a>8.5 <i class="far fa-star"></i></a>	
+							<a>123 <i class="fas fa-eye"></i></a>
+							<a>123 <i class="far fa-comment"></i></a>
+							<a>800 <i class="far fa-bookmark"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-12 thumbnail-padding">
+					<div class="destination-grid">
+						<a href=""><img src="images/img-BaiViet/7.jpg" alt=""></a>
+						<div class="destination-name">
+							<h4>Ben Ninh Kieu</h4>
+							<h5>Can Tho</h5>
+						</div>
+						<div class="destination-icon">	
+							<a>8.5 <i class="far fa-star"></i></a>	
+							<a>123 <i class="fas fa-eye"></i></a>
+							<a>123 <i class="far fa-comment"></i></a>
+							<a>800 <i class="far fa-bookmark"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-12 thumbnail-padding">
+					<div class="destination-grid">
+						<a href=""><img src="images/img-BaiViet/9.jpg" alt=""></a>
+						<div class="destination-name">
+							<h4>Ben Ninh Kieu</h4>
+							<h5>Can Tho</h5>
+						</div>
+						<div class="destination-icon">	
+							<a>8.5 <i class="far fa-star"></i></a>	
+							<a>123 <i class="fas fa-eye"></i></a>
+							<a>123 <i class="far fa-comment"></i></a>
+							<a>800 <i class="far fa-bookmark"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-12 thumbnail-padding">
+					<div class="destination-grid">
+						<a href=""><img src="images/img-BaiViet/4.jpg" alt=""></a>
+						<div class="destination-name">
+							<h4>Ben Ninh Kieu</h4>
+							<h5>Can Tho</h5>
+						</div>
+						<div class="destination-icon">	
+							<a>8.5 <i class="far fa-star"></i></a>	
+							<a>123 <i class="fas fa-eye"></i></a>
+							<a>123 <i class="far fa-comment"></i></a>
+							<a>800 <i class="far fa-bookmark"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-12 thumbnail-padding">
+					<div class="destination-grid">
+						<a href=""><img src="images/img-BaiViet/7.jpg" alt=""></a>
+						<div class="destination-name">
+							<h4>Ben Ninh Kieu</h4>
+							<h5>Can Tho</h5>
+						</div>
+						<div class="destination-icon">	
+							<a>8.5 <i class="far fa-star"></i></a>	
+							<a>123 <i class="fas fa-eye"></i></a>
+							<a>123 <i class="far fa-comment"></i></a>
+							<a>800 <i class="far fa-bookmark"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-12 thumbnail-padding">
+					<div class="destination-grid">
+						<a href=""><img src="images/img-BaiViet/6.jpg" alt=""></a>
+						<div class="destination-name">
+							<h4>Ben Ninh Kieu</h4>
+							<h5>Can Tho</h5>
+						</div>
+						<div class="destination-icon">	
+							<a>8.5 <i class="far fa-star"></i></a>	
+							<a>123 <i class="fas fa-eye"></i></a>
+							<a>123 <i class="far fa-comment"></i></a>
+							<a>800 <i class="far fa-bookmark"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-12 thumbnail-padding">
+					<div class="destination-grid">
+						<a href=""><img src="images/img-BaiViet/8.jpg" alt=""></a>
+						<div class="destination-name">
+							<h4>Ben Ninh Kieu</h4>
+							<h5>Can Tho</h5>
+						</div>
+						<div class="destination-icon">	
+							<a>8.5 <i class="far fa-star"></i></a>	
+							<a>123 <i class="fas fa-eye"></i></a>
+							<a>123 <i class="far fa-comment"></i></a>
+							<a>800 <i class="far fa-bookmark"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-12 thumbnail-padding">
+					<div class="destination-grid">
+						<a href=""><img src="images/img-BaiViet/5.jpg" alt=""></a>
+						<div class="destination-name">
+							<h4>Ben Ninh Kieu</h4>
+							<h5>Can Tho</h5>
+						</div>
+						<div class="destination-icon">	
+							<a>8.5 <i class="far fa-star"></i></a>	
+							<a>123 <i class="fas fa-eye"></i></a>
+							<a>123 <i class="far fa-comment"></i></a>
+							<a>800 <i class="far fa-bookmark"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ================== END POPULAR DESTINATION============= -->
 
+	<!-- ================== HOTEL ============= -->
+	<section class="hotel">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<div class="title">
+						<h3 class="">Recommended Hotels</h3>
+						<p>This is Amazing hotel!</p>
+					</div>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-12 col-12">
+					<div class="hotel-item">
+						<div class="hotel-image">
+							<div class="img">
+								<img src="images/hotel/1.jpg" alt="">
+							</div>
+						</div>
+						<div class="hotel-body">
+							<div class="ratting">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+							<h4>Muong Thanh 3</h4>
+							<p class="">Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
+							<div class="free-service">
+								<i class="fas fa-star"></i>
+							</div>
+						</div>
+						<div class="hotel-right">
+							<div class="price">
+								150k-300k
+							</div>
+							<div class="btn">
+								<a href="" class="btn btn-warning">Details</a>
+							</div>
+						</div>
+					</div>
+					<div class="hotel-item">
+						<div class="hotel-image">
+							<img src="images/hotel/2.jpg" alt="">
+						</div>
+						<div class="hotel-body">
+							<div class="ratting">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+							<h4>Muong Thanh 3</h4>
+							<p>Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
+							<div class="free-service">
+								<i class="fas fa-star"></i>
+							</div>
+						</div>
+						<div class="hotel-right">
+							<div class="price">
+								from
+								<span>2345</span>
+								person
+							</div>
+							<div class="btn">
+								<a href="" class="btn btn-warning">Details</a>
+							</div>
+						</div>
+					</div>
+					<div class="hotel-item">
+						<div class="hotel-image">
+							<img src="images/hotel/3.jpg" alt="">
+						</div>
+						<div class="hotel-body">
+							<div class="ratting">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+							<h4>Muong Thanh 3</h4>
+							<p>Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
+							<div class="free-service">
+								<i class="fas fa-star"></i>
+							</div>
+						</div>
+						<div class="hotel-right">
+							<div class="price">
+								from
+								<span>2345</span>
+								person
+							</div>
+							<div class="btn">
+								<a href="" class="btn btn-warning">Details</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12 col-12">
+					<div class="hotel-item">
+						<div class="hotel-image">
+							<img src="images/hotel/4.jpg" alt="">
+						</div>
+						<div class="hotel-body">
+							<div class="ratting">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+							<h4>Muong Thanh 3</h4>
+							<p>Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac. Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
+							<div class="free-service">
+								<i class="fas fa-star"></i>
+							</div>
+						</div>
+						<div class="hotel-right">
+							<div class="price">
+								from
+								<span>2345</span>
+								person
+							</div>
+							<div class="btn">
+								<a href="" class="btn btn-warning">Details</a>
+							</div>
+						</div>
+					</div>
+					<div class="hotel-item">
+						<div class="hotel-image">
+							<img src="images/hotel/3.jpg" alt="">
+						</div>
+						<div class="hotel-body">
+							<div class="ratting">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+							<h4>Muong Thanh 3</h4>
+							<p>Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
+							<div class="free-service">
+								<i class="fas fa-star"></i>
+							</div>
+						</div>
+						<div class="hotel-right">
+							<div class="price">
+								from
+								<span>2345</span>
+								person
+							</div>
+							<div class="btn">
+								<a href="" class="btn btn-warning">Details</a>
+							</div>
+						</div>
+					</div>
+					<div class="hotel-item">
+						<div class="hotel-image">
+							<img src="images/hotel/1.jpg" alt="">
+						</div>
+						<div class="hotel-body">
+							<div class="ratting">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+							<h4>Muong Thanh 3</h4>
+							<p>Etiam maximus molestie accumsan. Sed metus sapien, fermentum nec lorem ac.</p>
+							<div class="free-service">
+								<i class="fas fa-star"></i>
+							</div>
+						</div>
+						<div class="hotel-right">
+							<div class="price">
+								from
+								<span>2345</span>
+								person
+							</div>
+							<div class="btn">
+								<a href="" class="btn btn-warning">Details</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ================== END HOTEL ============= -->
 
-
+	<!-- ================== POST ============= -->
+	<section class="post" style="background-image: url('../cmm/images/background/2.jpg');">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<div class="title">
+						<h3 class="" style="color: white;">Recommended Hotels</h3>
+						<p style="color: white;">This is Amazing hotel!</p>
+					</div>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-12">
+					<div class="post-wiget">
+						<a href="#">
+							<div class="post-image">
+								<figure>
+									<img src="images/post/1.jpg" alt="">
+									<figcaption>
+										<span><i>3 minutes ago</i></span>
+									</figcaption>
+								</figure>	
+							</div>
+							<div class="post-content">
+								<div class="caption">
+									<div class="post-user">
+										<img src="images/user/1.jpg" alt="">
+									</div>
+									<h5>Vui xuan tai Can Tho Chi Voi 500k Vui xuan tai Can Tho Chi Voi 500k</h5>
+								</div>
+									
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-12">
+					<div class="post-wiget">
+						<a href="#">
+							<div class="post-image">
+								<figure>
+									<img src="images/post/2.png" alt="">
+									<figcaption>
+										<span><i>12 hours ago</i></span>
+									</figcaption>
+								</figure>
+								
+							</div>
+							<div class="post-content">
+								<div class="caption">
+									<div class="post-user">
+										<img src="images/user/2.jpg" alt="">
+									</div>
+									<h5>Thien duong ngan hoa ngay tai Viet Nam</h5>
+								</div>
+									
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-12">
+					<div class="post-wiget">
+						<a href="#">
+							<div class="post-image">
+								<figure>
+									<img src="images/post/3.jpg" alt="">
+									<figcaption>
+										<span><i>24 November 2017</i></span>
+									</figcaption>
+								</figure>
+								
+							</div>
+							<div class="post-content">
+								<div class="caption">
+									<div class="post-user">
+										<img src="images/user/3.jpg" alt="">
+									</div>
+									<h5>Da Lat ngan hoa, thien nhien huu tinh</h5>
+								</div>
+									
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-12">
+					<div class="post-wiget">
+						<a href="#">
+							<div class="post-image">
+								<figure>
+									<img src="images/post/1.jpg" alt="">
+									<figcaption>
+										<span><i>3 minutes ago</i></span>
+									</figcaption>
+								</figure>
+								
+							</div>
+							<div class="post-content">
+								<div class="caption">
+									<div class="post-user">
+										<img src="images/user/1.jpg" alt="">
+									</div>
+									<h5>Vui xuan tai Can Tho Chi Voi 500k Vui xuan tai Can Tho Chi Voi 500k</h5>
+								</div>
+									
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-12">
+					<div class="post-wiget">
+						<a href="#">
+							<div class="post-image">
+								<figure>
+									<img src="images/post/1.jpg" alt="">
+									<figcaption>
+										<span><i>3 minutes ago</i></span>
+									</figcaption>
+								</figure>	
+							</div>
+							<div class="post-content">
+								<div class="caption">
+									<div class="post-user">
+										<img src="images/user/3.jpg" alt="">
+									</div>
+									<h5>Vui xuan tai Can Tho Chi Voi 500k Vui xuan tai Can Tho Chi Voi 500k</h5>
+								</div>
+									
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-12">
+					<div class="post-wiget">
+						<a href="#">
+							<div class="post-image">
+								<figure>
+									<img src="images/post/1.jpg" alt="">
+									<figcaption>
+										<span><i>3 minutes ago</i></span>
+									</figcaption>
+								</figure>
+								
+							</div>
+							<div class="post-content">
+								<div class="caption">
+									<div class="post-user">
+										<img src="images/user/2.jpg" alt="">
+									</div>
+									<h5>Vui xuan tai Can Tho Chi Voi 500k Vui xuan tai Can Tho Chi Voi 500k</h5>
+								</div>
+									
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-12">
+					<div class="post-wiget">
+						<a href="#">
+							<div class="post-image">
+								<figure>
+									<img src="images/post/1.jpg" alt="">
+									<figcaption>
+										<span><i>3 minutes ago</i></span>
+									</figcaption>
+								</figure>
+								
+							</div>
+							<div class="post-content">
+								<div class="caption">
+									<div class="post-user">
+										<img src="images/user/1.jpg" alt="">
+									</div>
+									<h5>Vui xuan tai Can Tho Chi Voi 500k Vui xuan tai Can Tho Chi Voi 500k</h5>
+								</div>
+									
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-12">
+					<div class="post-wiget">
+						<a href="#">
+							<div class="post-image">
+								<figure>
+									<img src="images/post/1.jpg" alt="">
+									<figcaption>
+										<span><i>3 minutes ago</i></span>
+									</figcaption>
+								</figure>
+								
+							</div>
+							<div class="post-content">
+								<div class="caption">
+									<div class="post-user">
+										<img src="images/user/2.jpg" alt="">
+									</div>
+									<h5>Vui xuan tai Can Tho Chi Voi 500k Vui xuan tai Can Tho Chi Voi 500k</h5>
+								</div>
+									
+								<p>Lorem Ipsum is simply </p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ================== END POST ============= -->
 
 	<!-- ================== FOOTER ============= -->
 	<footer>
@@ -290,6 +1164,26 @@
 
 
 	<!-- script -->
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript">
+		$('.owl-carousel').owlCarousel({
+		    loop:true,
+		    margin:10,
+		    nav:true,
+		    responsive:{
+		        0:{
+		            items:3
+		        },
+		        600:{
+		            items:3
+		        },
+		        1000:{
+		            items:5
+		        }
+		    }
+		})
+	</script>
 	<script src="js/menu-style.js"></script>
+	<!-- end script -->
 </body>
 </html>

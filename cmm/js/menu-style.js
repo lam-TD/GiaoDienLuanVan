@@ -4,17 +4,15 @@ document.addEventListener("DOMContentLoaded",function () {
 		var flag = false;
 		if (window.pageYOffset > 56) 
 		{
-			document.getElementById('id-layer-top').classList.add('hidden-item');
-			document.getElementById('id-layer-menu').classList.add('fixed-top-style-menu');
-			document.getElementById('id-container').classList.add('id-container');
+			document.getElementById('id-menu-Top').classList.add('hidden-item');
+			document.getElementById('id-layer-top').classList.add('fixed-top-style-menu');
 			document.getElementById('hidden-formSearch').style.display = "block";
 			flag = true;
 		}
 		else
 		{
-			document.getElementById('id-layer-top').classList.remove('hidden-item');
-			document.getElementById('id-layer-menu').classList.remove('fixed-top-style-menu');
-			document.getElementById('id-container').classList.remove('id-container');
+			document.getElementById('id-menu-Top').classList.remove('hidden-item');
+			document.getElementById('id-layer-top').classList.remove('fixed-top-style-menu');
 			document.getElementById('hidden-formSearch').style.display = "none";
 			flag = false;
 		}
@@ -51,7 +49,38 @@ document.addEventListener("DOMContentLoaded",function () {
 				}
 				phan_hien_len.classList.add('hienthi');
 			}
-			
+		}
+	}
+
+	// notification
+	var nutCha = document.getElementsByClassName('cha-notification');
+	var anhienThongBao = document.getElementsByClassName('notification');
+	var aNotification = document.getElementsByClassName('a-notification');
+	var oldbtnThongBao = "";
+	for (var i = 0; i < aNotification.length; i++) {
+		aNotification[i].onclick = function () {
+			for (var j = 0; j < aNotification.length; j++) { aNotification[j].classList.remove('click-thongbao'); }
+			var hien_len = this.getAttribute("data-id-hienthi");
+			if (oldbtnThongBao == hien_len) 
+			{
+				this.classList.remove('click-thongbao');
+				oldbtnThongBao = "";
+				var phan_hien_len = document.getElementById(hien_len);
+				for (var k = 0; k < anhienThongBao.length; k++) {
+					anhienThongBao[k].classList.remove('hienthi-notification');
+				}
+				phan_hien_len.classList.remove('hienthi-notification');
+			}
+			else
+			{
+				this.classList.add('click-thongbao');
+				oldbtnThongBao = hien_len;
+				var phan_hien_len = document.getElementById(hien_len);
+				for (var k = 0; k < anhienThongBao.length; k++) {
+					anhienThongBao[k].classList.remove('hienthi-notification');
+				}
+				phan_hien_len.classList.add('hienthi-notification');
+			}
 		}
 	}
 
@@ -98,9 +127,7 @@ document.addEventListener("DOMContentLoaded",function () {
 			var currentSlide = document.querySelector('.img-carolsel ul li.active-img');
 			// tinh vi tri slide dang active
 			for (vitriSlide = 0; currentSlide = currentSlide.previousElementSibling; vitriSlide++) {} 
-			console.log(vitriSlide)
 			var slide = document.querySelectorAll('.img-carolsel ul li');
-			console.log(slide.length-1);
 			if (vitriSlide < (slide.length-1)) 
 			{
 				for (var i = 0; i < slide.length; i++) {
@@ -116,9 +143,7 @@ document.addEventListener("DOMContentLoaded",function () {
 				slide[0].classList.add('active-img');
 			}
 			
-		},2000);
+		},3000);
 	}
-
-
 
 },false);
