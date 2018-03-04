@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded",function () {
 			document.getElementById('id-menu-Top').classList.add('hidden-item');
 			document.getElementById('id-layer-top').classList.add('fixed-top-style-menu');
 			document.getElementById('hidden-formSearch').style.display = "block";
+			document.getElementById('id-icon-scroll-top').classList.add('hienthi-icon');
 			flag = true;
 		}
 		else
@@ -14,8 +15,15 @@ document.addEventListener("DOMContentLoaded",function () {
 			document.getElementById('id-menu-Top').classList.remove('hidden-item');
 			document.getElementById('id-layer-top').classList.remove('fixed-top-style-menu');
 			document.getElementById('hidden-formSearch').style.display = "none";
+			document.getElementById('id-icon-scroll-top').classList.remove('hienthi-icon');
 			flag = false;
 		}
+	});
+
+	// scroll top
+	$('#id-icon-scroll-top').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
 	});
 
 	// select button

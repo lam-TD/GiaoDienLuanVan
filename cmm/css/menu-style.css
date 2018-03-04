@@ -90,6 +90,10 @@ li.nav-item.btn-select{
 	border: 1px solid #ced4da;
 }
 
+ul.ul-right-menu-lam{
+	padding: 0;
+}
+
 #navbarSupportedContent ul li .a-select{
 	position: relative;
 	width: 131px;
@@ -160,11 +164,11 @@ label.boloc{
 
 form.form-search-menu {
 	position: relative;
-	top: 1px;
+	top: 7px;
 	left: 20px;
 	height: 38px;
 	border: 1px solid #ced4da;
-	width: 350px;
+	width: 100%;
 	overflow: hidden;
 }
 
@@ -373,6 +377,36 @@ p.text-nofi{
 
 .header #id-con ul.left-menu-lam li a.active-thongbao{color: red !important;font-size: 19px !important;}
 /*===================== end notification ================================*/
+
+/*===================== icon scroll top ================================*/
+.icon-scroll-top{
+	position: fixed;
+	bottom: 50px;
+	right: 10px;
+	z-index: 99999999;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.icon-scroll-top a{
+	cursor: pointer;
+	padding: 10px 15px;
+	color: white !important;
+	font-size: 20px;
+	background-color: black;
+}
+
+.icon-scroll-top a:hover{
+	color: yellow !important;
+}
+
+.hienthi-icon{
+	opacity: 1;
+	visibility: visible;
+	transition: 0.5s;
+}
+
+/*===================== end icon scroll top ================================*/
 
 .tinhthanhpho{margin-top: 50px;margin-bottom: 50px;
 }
